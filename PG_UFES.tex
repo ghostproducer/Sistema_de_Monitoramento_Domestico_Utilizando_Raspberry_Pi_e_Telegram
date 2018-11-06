@@ -1,0 +1,80 @@
+\include{files/documento}
+\include{files/pacotes}
+% INFORMAÇÕES DO TRABALHO
+
+\titulo{Proteção Digital de Sistemas Elétricos de Potência}
+
+\autor{Ulrich von Liechtenstein}
+
+\local{VITÓRIA – ES}
+
+\data{DEZEMBRO/2017}
+
+\defesa{XX de dezembro de 2051}
+
+\instituicao{UNIVERSIDADE FEDERAL DO ESPÍRITO SANTO\\
+    		 CENTRO TECNOLÓGICO\\
+   			 DEPARTAMENTO DE ENGENHARIA ELÉTRICA}
+
+\orientador{Prof. D. Sc. Oureste Elias Batista}
+            
+\coorientador{M. J. Obi-Wan Kenobi}
+
+\tipotrabalho{Projeto de Graduação}
+ 
+\preambulo{Parte manuscrita de Projeto de Graduação do(a) aluno(a) \textbf{\imprimirautor}, apresentado ao Departamento de Engenharia Elétrica do Centro Tecnológico da Universidade Federal do Espírito Santo, como requisito para obtenção do grau de Engenheiro Eletricista.}
+
+\include{files/pdfinfo}
+% INÍCIO DO DOCUMENTO
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing 
+\imprimircapa
+\imprimirfolhaderosto
+
+% FOLHA DE APROVAÇÃO
+\include{folha_de_aprovacao}
+% Substituir por um pdf assinado
+% \includepdf{folha_de_aprovacao_final.pdf}
+
+%DEDICATÓRIA, AGRADECIMENTOS E EPÍGRAFE
+\include{dedicatoria}
+
+% RESUMOS
+\include{resumos}
+
+% SUMÁRIO E LISTAS
+\include{listas}
+\textual
+
+% INTRODUÇÃO
+\include{intro}
+
+% EMBASAMENTO
+\include{base}
+
+% METODOLOGIA
+\include{metodo}
+
+% ANÁLISE DE DADOS
+\include{analise}
+
+% RESULTADOS
+\include{resultados}
+
+\phantompart
+%CONCLUSÃO
+include{conclusao}
+
+%REFERÊNCIAS BIBLIOGRÁFICAS
+\postextual
+\bibliography{bib/ABNT}
+
+%APÊNDICES
+%\include{apendices}
+
+% ANEXOS
+\include{anexos}
+
+\phantompart
+\end{document}

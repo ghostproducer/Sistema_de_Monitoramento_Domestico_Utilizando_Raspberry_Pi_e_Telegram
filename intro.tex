@@ -1,0 +1,66 @@
+\chapter{Introdução}\label{cap_exemplos}
+
+% ---
+\section{Codificação dos arquivos: UTF8}
+% ---
+
+A codificação de todos os arquivos do \abnTeX\ é \texttt{UTF8}. É necessário que
+você utilize a mesma codificação nos documentos que escrever, inclusive nos
+arquivos de base bibliográficas |.bib|.
+
+% ---
+\section{Citações diretas}
+\label{sec-citacao}
+% ---
+
+\index{citações!diretas}Utilize o ambiente \texttt{citacao} para incluir
+citações diretas com mais de três linhas:
+
+\begin{citacao}
+As citações diretas, no texto, com mais de três linhas, devem ser
+destacadas com recuo de 4 cm da margem esquerda, com letra menor que a do texto
+utilizado e sem as aspas. No caso de documentos datilografados, deve-se
+observar apenas o recuo \cite[5.3]{NBR10520:2002}.
+\end{citacao}
+
+Use o ambiente assim:
+
+\begin{verbatim}
+\begin{citacao}
+As citações diretas, no texto, com mais de três linhas [...] deve-se observar
+apenas o recuo \cite[5.3]{NBR10520:2002}.
+\end{citacao}
+\end{verbatim}
+
+O ambiente \texttt{citacao} pode receber como parâmetro opcional um nome de
+idioma previamente carregado nas opções da classe (\autoref{sec-hifenizacao}). Nesse
+caso, o texto da citação é automaticamente escrito em itálico e a hifenização é
+ajustada para o idioma selecionado na opção do ambiente. Por exemplo:
+
+\begin{verbatim}
+\begin{citacao}[english]
+Text in English language in italic with correct hyphenation.
+\end{citacao}
+\end{verbatim}
+
+Tem como resultado:
+
+\begin{citacao}[english]
+Text in English language in italic with correct hyphenation.
+\end{citacao}
+
+\index{citações!simples}Citações simples, com até três linhas, devem ser
+incluídas com aspas. Observe que em \LaTeX as aspas iniciais são diferentes das
+finais: ``Amor é fogo que arde sem se ver''.
+
+
+
+
+
+
+
+
+
+
+
+
